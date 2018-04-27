@@ -14,26 +14,25 @@ All output for the build process will be piped in a *dist* folder for distributi
 
 
 ##### Commands 
+`gulp scripts` command concatenates, minifies and copies all of the project's JavaScript files into an `all.min.js` file.
+This command also copies the `all.min.js` file into the `dist/scripts` folder. 
+This command generates JavaScript source maps.
 
-`gulp build` command properly runs the `clean`, `scripts`, `styles`, and `images` tasks.
+`gulp styles` command compiles the project’s SCSS files into CSS, and concatenates and minifies into an `all.min.css` file in `dist/styles`.
+This command also generates CSS source maps.
 
 `gulp images` command copies the optimized images to the `dist/content`.
 
-`clean` task fully completes before the `scripts`, `styles`, and `images` tasks are ran.
-
-`gulp scripts` command generates JavaScript source maps.
-
-`gulp styles` command compiles the project’s SCSS files into CSS, and concatenates and minifies into an `all.min.css` file in `dist/styles`.
-
-`gulp styles` command generates CSS source maps.
-
-`gulp` command properly runs the `build` task as a dependency.
-
-`gulp` command serves the project using a local webserver
-
 `gulp clean` command deletes all of the files and folders in the `dist` folder.
 
+`gulp build` command properly runs the `clean`, `scripts`, `styles`, and `images` tasks.
 
-Exceeds expectations:
+`clean` task fully completes before the `scripts`, `styles`, and `images` tasks are ran.
+
+`gulp` command properly runs the `build` task as a dependency.
+This command also serves the project using a local webserver.
+
+
+##### Exceeds expectations:
 
 The `gulp` command also listens for changes to any `.scss` file. When there is a change to any `.scss` file, the `gulp styles` command is run, the files are compiled, concatenated and minified to the dist folder, and the browser reloads, displaying the changes
