@@ -7,6 +7,7 @@ The build process involves the following tasks:
 * Compile SCSS into CSS in a concatenated and minified file
 * Generate JavaScript and CSS source maps
 * Compress any JPEG or PNG files
+
 All output for the build process will be piped in a *dist* folder for distribution or deployment.
 
 
