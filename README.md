@@ -17,10 +17,10 @@ All output for the build process will be piped in a *dist* folder for distributi
 ##### Commands 
 `gulp scripts` command concatenates, minifies and copies all of the project's JavaScript files into an `all.min.js` file.
 * This command also copies the `all.min.js` file into the `dist/scripts` folder. 
-* This command generates JavaScript source maps.
+* This command also generates JavaScript source maps.
 
 `gulp styles` command compiles the project’s SCSS files into CSS, and concatenates and minifies into an `all.min.css` file in `dist/styles`.
-This command also generates CSS source maps.
+* This command also generates CSS source maps.
 
 `gulp images` command copies the optimized images to the `dist/content`.
 
@@ -31,7 +31,7 @@ This command also generates CSS source maps.
 `clean` task fully completes before the `scripts`, `styles`, and `images` tasks are ran.
 
 `gulp` command properly runs the `build` task as a dependency.
-This command also serves the project using a local webserver.
+* This command also serves the project using a local webserver.
 
 
 ##### Exceeds expectations:
