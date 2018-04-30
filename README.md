@@ -1,6 +1,6 @@
 ## Gulp
 
-This project uses [gulp](https://gulpjs.com/) to set up a Gulp build process to prepare the website for deployment.
+This project uses [gulp](https://gulpjs.com/) to set up a Gulp build process to prepare a website for deployment.
 
 The build process involves the following tasks:
 * Concatenate and minify the JavaScript files
@@ -27,8 +27,7 @@ All output for the build process will be piped in a *dist* folder for distributi
 `gulp clean` command deletes all of the files and folders in the `dist` folder.
 
 `gulp build` command properly runs the `clean`, `scripts`, `styles`, and `images` tasks.
-
-`clean` task fully completes before the `scripts`, `styles`, and `images` tasks are ran.
+* `clean` task fully completes before the `scripts`, `styles`, and `images` tasks are ran.
 
 `gulp` command properly runs the `build` task as a dependency.
 * This command also serves the project using a local webserver.
