@@ -92,7 +92,7 @@ gulp.task("default", ['build'], () => {
   gulp.start('serve');
 });
 
-// Static Server + watching scss/html files
+// Static Server + watching sass files
 gulp.task('serve', function() {
 
   setTimeout(function() {
