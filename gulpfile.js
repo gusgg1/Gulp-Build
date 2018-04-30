@@ -95,9 +95,11 @@ gulp.task("default", ['build'], () => {
 // Static Server + watching scss/html files
 gulp.task('serve', function() {
 
-  browsrSync.init({
+  setTimeout(function() {
+    browsrSync.init({
       server: "./dist"
-  });
+    });
+  }, 1000);
 
   gulp.watch("src/sass/**", ['styles']);
   gulp.watch("src/sass/**").on('change', browsrSync.reload);
