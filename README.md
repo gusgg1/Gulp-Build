@@ -31,5 +31,4 @@ All output for the build process will be piped in a *dist* folder for distributi
 
 `gulp` command properly runs the `build` task as a dependency.
 * This command also serves the project using a local webserver.
-
-The `gulp` command also listens for changes to any `.scss` file. When there is a change to any `.scss` file, the `gulp styles` command is run, the files are compiled, concatenated and minified to the dist folder, and the browser reloads, displaying the changes
+* The `gulp` command also listens for changes to any `.scss` file. When there is a change to any `.scss` file, the `gulp styles` command is run, the files are compiled, concatenated and minified to the dist folder, and the browser reloads, displaying the changes
