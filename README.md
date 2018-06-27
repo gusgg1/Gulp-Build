@@ -1,4 +1,8 @@
-## Gulp
+# Gulp
+
+#### Project 8
+
+###### This is my eighth of twelve projects for the Techdegree Full Stack JavaScript.
 
 This project uses [gulp](https://gulpjs.com/) to set up a Gulp build process to prepare a website for deployment.
 
